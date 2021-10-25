@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3.9'
 secrets:
   test_db_1:
      file: test_db_1.txt
