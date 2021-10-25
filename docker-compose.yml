@@ -15,5 +15,5 @@ services:
       - test_db_1
       - test_db_2
     environment:
-      - MYSQL_USER=/run/secrets/test_db_1
-      - MYSQL_PASSWORD=/run/secrets/test_db_2
+      MYSQL_USER_FILE: /run/secrets/test_db_1
+      MYSQL_PASSWORD_FILE: /run/secrets/test_db_2
