@@ -8,7 +8,8 @@ secrets:
 services:
   test_db:
     image: mysql
-    command: --default-authentication-plugin=mysql_native_password
+    deploy:
+      replicas: 1
     secrets:
     - test_db_1
     - test_db_2
