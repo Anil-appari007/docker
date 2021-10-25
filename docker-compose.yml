@@ -1,0 +1,14 @@
+version: '3.1'
+secrets:
+  test_db_1:
+    external: true
+
+services:
+
+  test_db:
+    image: mysql
+    restart: always
+    secrets:
+      - test_db_1
+    environment:
+      - MYSQL_ROOT_PASSWORD: /run/secrets/test_db_1
