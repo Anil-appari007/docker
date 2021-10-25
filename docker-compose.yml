@@ -6,14 +6,12 @@ secrets:
      file: test_db_2.txt
 
 services:
-
   test_db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
-#     restart: always
     secrets:
-      - test_db_1
-      - test_db_2
+    - test_db_1
+    - test_db_2
     environment:
       MYSQL_USER_FILE: /run/secrets/test_db_1
       MYSQL_PASSWORD_FILE: /run/secrets/test_db_2
