@@ -1,9 +1,9 @@
 version: '3.1'
 secrets:
   test_db_1:
-    external: true
+     file: test_db_1.txt
   test_db_2:
-    external: true
+     file: test_db_2.txt
 
 services:
 
