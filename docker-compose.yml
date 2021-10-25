@@ -2,8 +2,6 @@ version: '3.9'
 secrets:
   test_db_1:
      file: test_db_1.txt
-#   test_db_2:
-#      file: test_db_2.txt
 
 services:
   test_db:
@@ -12,6 +10,5 @@ services:
       replicas: 1
     secrets:
     - test_db_1
-#     - test_db_2
     environment:
       MYSQL_ROOT_PASSWORD_FILE: /run/secrets/test_db_1
