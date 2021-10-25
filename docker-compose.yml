@@ -16,3 +16,4 @@ services:
     environment:
       MYSQL_USER_FILE: /run/secrets/test_db_1
       MYSQL_PASSWORD_FILE: /run/secrets/test_db_2
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/test_db_2
