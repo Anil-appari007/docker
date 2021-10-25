@@ -2,6 +2,8 @@ version: '3.1'
 secrets:
   test_db_1:
     external: true
+  test_db_2:
+    external: true
 
 services:
 
@@ -10,5 +12,7 @@ services:
     restart: always
     secrets:
       - test_db_1
+      - test_db_2
     environment:
-      - MYSQL_ROOT_PASSWORD=/run/secrets/test_db_1
+      - MYSQL_USER=/run/secrets/test_db_1
+      - MYSQL_PASSWORD=/run/secrets/test_db_2
