@@ -1,3 +1,4 @@
 #!/bin/sh
 echo hello
-talisman --scanWithHtml
+echo $HOME
+# talisman --scanWithHtml
