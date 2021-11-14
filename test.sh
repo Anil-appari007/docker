@@ -1,4 +1,4 @@
 #!/bin/sh
 echo hello
-echo $HOME
-# talisman --scanWithHtml
+export TALISMAN_HOME="/c/Program Files/Talisman/bin"
+talisman --scanWithHtml
