@@ -1,2 +1,3 @@
 #!/bin/sh
-talisman --scanWithHtml
+# talisman --scanWithHtml
+cd ~  && pwd
